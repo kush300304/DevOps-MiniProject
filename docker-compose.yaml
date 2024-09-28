@@ -20,7 +20,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: backend_container
+    container_name: backend_container_jenkins_v1
     volumes:
       - ./backend:/app/backend
       - ./frontend:/app/frontend
