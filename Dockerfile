@@ -11,7 +11,7 @@ COPY backend /app/backend
 COPY frontend /app/frontend
 
 # Install the required packages
-RUN pip install fastapi uvicorn jinja2
+RUN pip install fastapi uvicorn jinja2 python-multipart
 
 # Set the environment variable for Python to run in unbuffered mode
 ENV PYTHONUNBUFFERED 1
