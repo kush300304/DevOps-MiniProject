@@ -44,6 +44,7 @@ Question: {question}
 
 Answer:"""
 
+
 PROMPT = PromptTemplate(
     template=template, input_variables=["context", "question"]
 )
