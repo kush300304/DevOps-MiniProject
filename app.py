@@ -31,6 +31,8 @@ class GroqLLM(LLM):
     @property
     def _llm_type(self) -> str:
         return "groq"
+    
+
 
 # Initialize GroqLLM
 llm = GroqLLM(client=groq_client)
@@ -43,6 +45,8 @@ Context: {context}
 Question: {question}
 
 Answer:"""
+
+
 
 PROMPT = PromptTemplate(
     template=template, input_variables=["context", "question"]
